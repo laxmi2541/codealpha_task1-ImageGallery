@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Gallery</h1>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="city">City</button>
+                <button class="filter-btn" data-filter="people">People</button>
+            </div>
+        </header>
+
+        <div class="gallery">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg" alt="Nature Image">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg" alt="City Image">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="People Image">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg" alt="Nature Image">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" alt="City Image">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="people">
+                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="People Image">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <button class="lightbox-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        <img src="" alt="Lightbox Image" class="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
